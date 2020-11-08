@@ -11,13 +11,23 @@ func main() {
 }
 
 
+func printGreeting(eb englishBot){
+	fmt.Println(eb.getGreeting())
+}
+
+func printGreeting(sb spaishBot){
+	fmt.Println(sb.getGreeting())
+}
+
+
+
 func (eb englishBot) getGreeting() string{
 	reutn "Hi There !"	
 }
 
 
-func (sb spaishBot) getGreeting() string{
-	reutn "Hola !"	
+func (sb sbo) getGreeting() string{
+	reutn "Hi There !"	
 }
 
 // func printMap(c map[string]string) {
