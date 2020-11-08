@@ -3,31 +3,30 @@ package main
 import "fmt"
 
 type englishBot struct{}
-type spaishBot struct{}
+type spanishBot struct{}
 
 func main() {
+	eb := englishBot{}
+	sb := spanishBot{}
 
-	// printMap(colors)
+	printGreeting(eb)
+	printGreeting(sb)
 }
 
-
-func printGreeting(eb englishBot){
+func printGreeting(eb englishBot) {
 	fmt.Println(eb.getGreeting())
 }
 
-func printGreeting(sb spaishBot){
+func printGreeting(sb spanishBot) {
 	fmt.Println(sb.getGreeting())
 }
 
-
-
-func (eb englishBot) getGreeting() string{
-	reutn "Hi There !"	
+func (eb englishBot) getGreeting() string {
+	return "Hi There !"
 }
 
-
-func (sb sbo) getGreeting() string{
-	reutn "Hi There !"	
+func (sb spanishBot) getGreeting() string {
+	return "Hi There !"
 }
 
 // func printMap(c map[string]string) {
@@ -35,4 +34,3 @@ func (sb sbo) getGreeting() string{
 // 		fmt.Println("Hex code for", color, " is ", hex)
 // 	}
 // }
- 
